@@ -171,11 +171,10 @@ const createI18nContent = (t) => {
         label: t("gallery.label"),
         title: t("gallery.title"),
         description: t("gallery.description", {name: person.name}),
-        // Images from https://pexels.com
         images: [
             {
                 src: '/images/gallery/img-01.jpg',
-                alt: 'image',
+                alt: 'annecy',
                 orientation: 'vertical'
             },
             {
