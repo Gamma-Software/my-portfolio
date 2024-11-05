@@ -1,0 +1,86 @@
+{
+    "person": {
+        "role": "Ingénieur concepteur, entrepreneur, et développeur",
+        "certificate": "Ingénieur des transports spécialité Systèmes embarqués; Certifié ISTQB; Full Stack Developer Meta"
+    },
+    "newsletter": {
+        "title": "Abonnez-vous à la newsletter de {firstName}",
+        "description": "J'écris occasionnellement sur l'entrepreneuriat, la technologie, l'IA, les tests, et partage des réflexions sur l'intersection entre l'IA et ingénierie",
+        "button": "S'inscrire"
+    },
+    "home": {
+        "label": "Accueil",
+        "title": "Portfolio de {name}",
+        "description": "Site portfolio présentant mon travail en tant que {role}",
+        "headline": "Ingénieur concepteur, entrepreneur, et développeur",
+        "subline": "Je suis Valentin, Responsable technique chez Worldline, où je suis responsable d'une équipe de 6 personnes en charge du développement de solutions embarqués dans des terminaux de paiement. Après le travail, je développe mes propres projets."
+    },
+    "about": {
+        "label": "À propos",
+        "title": "À propos de moi",
+        "calendar": {
+            "title": "Prendre rendez-vous",
+            "description": "Contactez-moi pour un rendez-vous"
+        },
+        "description": "Rencontrez {name}, {role} de {location}",
+        "intro": {
+            "title": "Introduction",
+            "description": "Ingénieur et Chef de projet passionné, avec expertise en développement embarqué, mobile, web et IA générative. Diplômé en ingénierie mécanique aéronautique, je relie différents domaines techniques et maîtrise l’automatisation et le DevOps pour mener des projets innovants."
+        },
+        "work": {
+            "title": "Expérience professionnelle",
+            "experiences": {
+                "Worldline": {
+                    "timeframe": "Avril 2022 - Présent",
+                    "role": "Responsable technique",
+                    "achievements": "Référent technique et point d'entré de l'équipe In-Store Payment Gateway (Axis) Vending Parking EVCharging. __Axis est une solution de paiement internationale traitant plus de 1 Milliard d'Euro par jour !__; Élaboration de stratégies et méthodologies de tests (Basé sur l'ISTQB), __contribuant à une augmentation de 50% de la couverture de tests__.; Automatisation des tests sur banc d'essai, __contribuant à atteindre 80% de la couverture des tests automatiquement__.; Mise en place d'une standardisation et systématisation de la validation et génération des packages logiciels. __Plus de 500 différents packages logiciels sont générés chaque mois).__; Suivi de l'équipe et de son efficience __(amélioration de l'efficience de 70% de l'équipe en optimisant les méthodes de travail).__; Travail en collaboration avec plusieurs partenaires (LM Control, Hectronic, Symotronic, etc...) pour l'intégration de nouvelles méthodes des paiements __(projets internationaux menés avec succès).__"
+                },
+                "Navya": {
+                    "timeframe": "2018 - 2022",
+                    "role": "Designer Principal",
+                    "achievements": "Développement d'un système de design unifiant la marque sur plusieurs plateformes, améliorant la cohérence du design de 40 %.; Dirigé une équipe interfonctionnelle pour lancer une nouvelle ligne de produits, contribuant à une augmentation de 15 % du chiffre d'affaires global de l'entreprise."
+                }
+            }
+        },
+        "studies": {
+            "title": "Études",
+            "institutions": {
+                "Université de Jakarta": {
+                    "description": "Étudié en génie logiciel."
+                },
+                "Construire l'Avenir": {
+                    "description": "Étudié le marketing en ligne et le branding personnel."
+                }
+            }
+        },
+        "technical": {
+            "title": "Compétences techniques",
+            "skills": {
+                "Figma": {
+                    "description": "Capable de prototyper dans Figma avec Once UI à une vitesse incroyable."
+                },
+                "Nextjs": {
+                    "description": "Construction d'applications de nouvelle génération avec Next.js + Once UI + Supabase."
+                }
+            }
+        }
+    },
+    "blog": {
+        "label": "Blog",
+        "title": "Écrire sur le design et la technologie...",
+        "description": "Lisez ce que {name} a récemment entrepris"
+    },
+    "work": {
+        "label": "Travail",
+        "title": "Mes projets",
+        "description": "Projets par {name}"
+    },
+    "gallery": {
+        "label": "Galerie",
+        "title": "Ma galerie photo",
+        "description": "Une collection de photos par {name}"
+    },
+    "projectCard": {
+        "label": "Lire l'étude de cas"
+    }
+}

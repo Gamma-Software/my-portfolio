@@ -16,6 +16,7 @@ export type SmartImageProps = ImageProps & {
     isLoading?: boolean;
     objectFit?: CSSProperties['objectFit'];
     enlarge?: boolean;
+    link?: string;
     src: string;
 };
 
@@ -29,15 +30,24 @@ const SmartImage: React.FC<SmartImageProps> = ({
     isLoading = false,
     objectFit = 'cover',
     enlarge = false,
+    link,
     src,
     ...props
 }) => {
     const [isEnlarged, setIsEnlarged] = useState(false);
     const imageRef = useRef<HTMLDivElement>(null);
 
+    if (link && enlarge) {
+        console.warn('SmartImage: link is ignored if enlarge is true');
+    }
+
     const handleClick = () => {
         if (enlarge) {
             setIsEnlarged(!isEnlarged);
+            return;
+        }
+        if (link) {
+            window.open(link, '_blank');
         }
     };
 
@@ -81,7 +91,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                 ref={imageRef}
                 fillWidth
                 position="relative"
-                {...(!isEnlarged && { background: 'neutral-medium' })}
+                {...(!isEnlarged && { background: 'neutral-strong' })}
                 style={{
                     outline: 'none',
                     overflow: 'hidden',
@@ -91,7 +101,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                         ? `${height}rem`
                         : '100%',
                     aspectRatio,
-                    cursor: enlarge ? 'pointer' : 'default',
+                    cursor: enlarge || link ? 'pointer' : 'default',
                     borderRadius: isEnlarged ? '0' : radius ? `var(--radius-${radius})` : undefined,
                     ...calculateTransform(),
                     ...style,
@@ -121,7 +131,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                         src={src}
                         alt={alt}
                         fill
-                        style={{ 
+                        style={{
                             objectFit: isEnlarged ? 'contain' : objectFit,
                         }}
                     />
@@ -159,7 +169,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                                 loop
                                 muted
                                 playsInline
-                                style={{ 
+                                style={{
                                     width: '90vw',
                                     height: 'auto',
                                     objectFit: 'contain',

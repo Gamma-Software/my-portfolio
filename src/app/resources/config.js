@@ -1,12 +1,12 @@
-const baseURL = 'demo.app'
+const baseURL = 'leaptech.io'
 
 // Enable localization
-const i18n = false;
+const i18n = true;
 
 // Manage localized content in the messages folder
 const i18nOptions = {
-    locales: ['en'],            // A list of all locales that are supported, e.g. ['en','id']
-    defaultLocale: 'en'         // Locale used by default and as a fallback
+    locales: ['en', 'fr'],            // A list of all locales that are supported, e.g. ['en','id']
+    defaultLocale: 'fr'         // Locale used by default and as a fallback
 }
 
 const routes = {
@@ -31,12 +31,12 @@ const effects = {
 
 const style = {
     theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
+    neutral:     'slate',         // sand | gray | slate
     brand:       'aqua',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'yellow',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid:       'contrast',     // color | contrast
+    accent:      'aqua',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    solid:       'color',     // color | contrast
     solidStyle:  'flat',         // flat | plastic
-    border:      'playful',      // rounded | playful | conservative
+    border:      'rounded',      // rounded | playful | conservative
     surface:     'translucent',  // filled | translucent
     transition:  'all'           // all | micro | macro
 }

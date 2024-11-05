@@ -25,6 +25,7 @@ export default function MasonryGrid() {
             {gallery.images.map((image, index) => (
                 <SmartImage
                     key={index}
+                    enlarge
                     radius="m"
                     aspectRatio={image.orientation === "horizontal" ? "16 / 9" : "9 / 16"}
                     src={image.src}

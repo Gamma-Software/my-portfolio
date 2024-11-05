@@ -9,7 +9,7 @@ const person = {
     role:      'Design Engineer',
     avatar:    '/images/avatar.png',
     location:  'Europe/Paris',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['English', 'French']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -85,6 +85,7 @@ const about = {
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
+                        link: 'https://fly.com',
                         src: '/images/projects/project-01/cover-01.jpg',
                         alt: 'Once UI Project',
                         width: 16,
@@ -176,79 +177,108 @@ const gallery = {
     label: 'Gallery',
     title: 'My photo gallery',
     description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
     images: [
-        {
-            src: '/images/gallery/img-01.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-02.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-03.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-04.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-05.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-06.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-07.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-08.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-09.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-10.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-11.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-12.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-13.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-14.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-    ]
-}
+            {
+                src: '/images/gallery/bretagne/bretagne_plage.jpg',
+                alt: 'bretagne plage',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/bretagne/boys.jpg',
+                alt: 'boys',
+                orientation: 'vertical'
+            },
+            {
+                src: '/images/gallery/bretagne/iles-chausey.mp4',
+                alt: 'iles chausey',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/bretagne/meneham-higher.jpg',
+                alt: 'meneham higher',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/bretagne/meneham-lower.jpg',
+                alt: 'meneham lower',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/bretagne/meneham-pano.jpg',
+                alt: 'meneham pano',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/cloud/cloud-magenta.jpg',
+                alt: 'cloud magenta',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/cloud/cloud-violet.jpg',
+                alt: 'cloud violet',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/etretat/etretat_2.jpg',
+                alt: 'etretat stretch',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/etretat/etretat-aval-cliff.jpg',
+                alt: 'etretat cliss',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/etretat/etretat.jpg',
+                alt: 'etretat bw',
+                orientation: 'vertical'
+            },
+            {
+                src: '/images/gallery/etretat/second-jour-etretat.jpg',
+                alt: 'etretat second day',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/normandie/baie-de-slack.jpg',
+                alt: 'baie de slack',
+                orientation: 'vertical'
+            },
+            {
+                src: '/images/gallery/normandie/cotes-de-granville.jpg',
+                alt: 'cote de granville',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/normandie/coucher-du-soleil.jpg',
+                alt: 'coucher du soleil',
+                orientation: 'vertical'
+            },
+            {
+                src: '/images/gallery/normandie/eglise-normandie.jpg',
+                alt: 'eglise normandie',
+                orientation: 'vertical'
+            },
+            {
+                src: '/images/gallery/normandie/normandie.jpg',
+                alt: 'normandie port',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/normandie/plage-de-wimereux.jpg',
+                alt: 'plage de wimereux',
+                orientation: 'vertical'
+            },
+            {
+                src: '/images/gallery/annecy/dent-de-lafon.jpg',
+                alt: 'dent de lafon',
+                orientation: 'horizontal'
+            },
+            {
+                src: '/images/gallery/annecy/dent-de-lafon2.jpg',
+                alt: 'dent de lafon',
+                orientation: 'horizontal'
+            }
+        ]
+    }
 
 export { person, social, newsletter, home, about, blog, work, gallery };
