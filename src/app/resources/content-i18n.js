@@ -235,34 +235,29 @@ const createI18nContent = (t) => {
             title: t("about.technical.title"),
             skills: [
                 {
-                    title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-02.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                        {
-                            src: '/images/projects/project-01/cover-03.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    title: 'Conception mécanique',
+                    description: <>{t("about.technical.skills.mecanique.description")}</>,
+                    images: []
+                },
+                {
+                    title: 'Conception logicielle, développement et test',
+                    description: <>{t("about.technical.skills.dev.description")}</>,
+                    images: []
+                },
+                {
+                    title: 'Gen AI',
+                    description: <>{t("about.technical.skills.Gen AI.description")}</>,
+                    images: []
+                },
+                {
+                    title: 'React.js',
+                    description: <>{t("about.technical.skills.Reactjs.description")}</>, // "." not accepted in next-intl namespace
+                    images: []
                 },
                 {
                     title: 'Next.js',
                     description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-04.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    images: []
                 }
             ]
         }

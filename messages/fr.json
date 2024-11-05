@@ -77,11 +77,23 @@
         "technical": {
             "title": "Compétences techniques",
             "skills": {
+                "mecanique": {
+                    "description": "Conception et modélisation mécanique 3D (Matlab, Simulink, Autodesk, SketchUp)."
+                },
+                "dev": {
+                    "description": "Développement Python, C/C++, Javascript, Typescript, Swift, Kotlin."
+                },
+                "Gen AI": {
+                    "description": "Développement d'applications avec des modèles de langage génératifs (LLM) à l'aide du framework LangChain."
+                },
                 "Figma": {
-                    "description": "Capable de prototyper dans Figma avec Once UI à une vitesse incroyable."
+                    "description": "Capable de prototyper dans Figma des produits et interfaces."
+                },
+                "Reactjs": {
+                    "description": "Construction d'applications de nouvelle génération avec React.js + Supabase."
                 },
                 "Nextjs": {
-                    "description": "Construction d'applications de nouvelle génération avec Next.js + Once UI + Supabase."
+                    "description": "Construction d'applications de nouvelle génération avec Next.js + Supabase."
                 }
             }
         }
