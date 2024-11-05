@@ -2,14 +2,14 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Valentin',
+        lastName:  'Rudloff',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        avatar:    '/images/avatar.png',
+        location:  'Europe/Paris',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
         languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
     }
 
@@ -25,12 +25,12 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/Gamma-Software/',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
+            link: 'https://www.linkedin.com/rudloffvalentin/',
         },
         {
             name: 'X',
@@ -40,7 +40,7 @@ const createI18nContent = (t) => {
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:valentin.rudloff.perso@gmail.com',
         },
     ]
 
@@ -65,7 +65,7 @@ const createI18nContent = (t) => {
         },
         calendar: {
             display: true,
-            link: 'https://cal.com'
+            link: 'https://cal.com/valentin-rudloff-htb2it/15min'
         },
         intro: {
             display: true,
@@ -183,12 +183,12 @@ const createI18nContent = (t) => {
                 alt: 'image',
                 orientation: 'horizontal'
             },
-            { 
+            {
                 src: '/images/gallery/img-03.jpg',
                 alt: 'image',
                 orientation: 'vertical'
             },
-            { 
+            {
                 src: '/images/gallery/img-04.jpg',
                 alt: 'image',
                 orientation: 'horizontal'
@@ -223,7 +223,7 @@ const createI18nContent = (t) => {
                 alt: 'image',
                 orientation: 'horizontal'
             },
-            { 
+            {
                 src: '/images/gallery/img-11.jpg',
                 alt: 'image',
                 orientation: 'vertical'
@@ -238,7 +238,7 @@ const createI18nContent = (t) => {
                 alt: 'image',
                 orientation: 'horizontal'
             },
-            { 
+            {
                 src: '/images/gallery/img-14.jpg',
                 alt: 'image',
                 orientation: 'horizontal'
