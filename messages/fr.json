@@ -27,6 +27,14 @@
             "title": "Introduction",
             "description": "Ingénieur et Chef de projet passionné, avec expertise en développement embarqué, mobile, web et IA générative. Diplômé en ingénierie mécanique aéronautique, je relie différents domaines techniques et maîtrise l’automatisation et le DevOps pour mener des projets innovants."
         },
+        "personal": {
+            "title": "Expérience personnelle",
+            "description": "Passionné par les nouvelles technologies depuis mon enfance, j'ai expérimenté, prototypé et mis en production des projets dans le domaine du mobiles, web et de l'embarquées.",
+            "cta": {
+                "title": "Voir mes projets",
+                "link": "/work"
+            }
+        },
         "work": {
             "title": "Expérience professionnelle",
             "experiences": {
@@ -35,21 +43,34 @@
                     "role": "Responsable technique",
                     "achievements": "Référent technique et point d'entré de l'équipe In-Store Payment Gateway (Axis) Vending Parking EVCharging. __Axis est une solution de paiement internationale traitant plus de 1 Milliard d'Euro par jour !__; Élaboration de stratégies et méthodologies de tests (Basé sur l'ISTQB), __contribuant à une augmentation de 50% de la couverture de tests__.; Automatisation des tests sur banc d'essai, __contribuant à atteindre 80% de la couverture des tests automatiquement__.; Mise en place d'une standardisation et systématisation de la validation et génération des packages logiciels. __Plus de 500 différents packages logiciels sont générés chaque mois).__; Suivi de l'équipe et de son efficience __(amélioration de l'efficience de 70% de l'équipe en optimisant les méthodes de travail).__; Travail en collaboration avec plusieurs partenaires (LM Control, Hectronic, Symotronic, etc...) pour l'intégration de nouvelles méthodes des paiements __(projets internationaux menés avec succès).__"
                 },
-                "Navya": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Designer Principal",
-                    "achievements": "Développement d'un système de design unifiant la marque sur plusieurs plateformes, améliorant la cohérence du design de 40 %.; Dirigé une équipe interfonctionnelle pour lancer une nouvelle ligne de produits, contribuant à une augmentation de 15 % du chiffre d'affaires global de l'entreprise."
+                "Navya_rm": {
+                    "timeframe": "2020 - 2022",
+                    "role": "Release Manager",
+                    "achievements": "Mise en place de la gestion des release du logiciel embarqué NavyaDrive. __NavyaDrive est une solution de conduite autonome pour 5 différents véhicules industriels développée par 80 développeurs__.; Responsable d'intégration des briques logicielles de ses 80 développeurs (__à raison de 150 commits par jour__); Mise en place de la pipeline CI/CD. __En 2 ans, plus de 2 000 000 de kilomètres ont été parcourus par les véhicules Navya dans des environnements simulés.__; Suivi des bug et reporting auprès de la direction. __Réduction du nombre de bugs de 50% avant bêta entre la première version et la dernière version__.; Responsable de la stratégie de validation et de la conduction des tests. __Gestion de deux équipes (3 testeurs et 3 automaticiens)__"
+                },
+                "Navya_tract": {
+                    "timeframe": "2019 - 2020",
+                    "role": "Chef de projet Autonome Tract",
+                    "achievements": "Référent technique et gestion de projet. Développement et intégration Hard/Middle/Software d'une plateforme AGV de Charlatte pour la rendre autonome. __Gestion de 6 équipes métiers (15 dev, 1 automaticien, 2 testeurs, 1 chargé de déploiement)__ ; Élaboration d'un projet de A à Z de la conception technique au déploiement; Organisation de comités de projet."
+                },
+                "Navya_dev": {
+                    "timeframe": "2017 - 2019",
+                    "role": "Développeur embarqué,Contrôle de trajectoire",
+                    "achievements": "Dveloppement logiciel embarqué pour le contrôle de trajectoire de véhicules industriels. __Développement sous contrainte temps réel avec RTMaps__.; Développement d'algorithmes d'évitement d'obstacles; Développement d'algorithmes d'optimisation de passage pietons. __Prédiction de trajectoires des obstacles__.; Mise en place de bonne pratiques d'ingénierie logicielle __en menant à bien un projet de A à Z__."
                 }
             }
         },
         "studies": {
             "title": "Études",
             "institutions": {
-                "Université de Jakarta": {
-                    "description": "Étudié en génie logiciel."
+                "ESTACA": {
+                    "description": "Étudié l'ingénierie mécanique (aérospatial, aéronautique, automobile, ferroviaire) et les systèmes embarqués."
                 },
-                "Construire l'Avenir": {
-                    "description": "Étudié le marketing en ligne et le branding personnel."
+                "ISTQB": {
+                    "description": "Étudié le test logiciel."
+                },
+                "Meta": {
+                    "description": "Étudié le développement web full stack."
                 }
             }
         },

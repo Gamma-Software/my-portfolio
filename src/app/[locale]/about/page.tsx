@@ -52,6 +52,11 @@ export default function About(
             items: []
         },
         {
+            title: about.personal.title,
+            display: about.personal.display,
+            items: []
+        },
+        {
             title: about.work.title,
             display: about.work.display,
             items: about.work.experiences.map(experience => experience.company)
@@ -211,6 +216,40 @@ export default function About(
                         </Flex>
                     )}
 
+                    <Heading
+                        as="h2"
+                        id={about.personal.title}
+                        variant="display-strong-s"
+                        marginBottom="m">
+                        {about.personal.title}
+                    </Heading>
+                    <Text
+                        id={about.personal.title}
+                        variant="body-default-l"
+                        marginBottom="l">
+                        {about.personal.description}
+                    </Text>
+                    <Flex
+                        className={styles.blockAlign}
+                        style={{
+                            backdropFilter: 'blur(var(--static-space-1))',
+                            border: '1px solid var(--brand-alpha-medium)',
+                            width: 'fit-content'
+                        }}
+                        alpha="brand-weak" radius="full"
+                        fillWidth padding="4" gap="8" marginBottom="m"
+                        alignItems="center">
+                        <Flex
+                            paddingX="8">
+                            {about.personal.cta.title}
+                        </Flex>
+                        <IconButton
+                            href={about.personal.cta.link}
+                            data-border="rounded"
+                            variant="primary"
+                            icon="chevronRight"/>
+                    </Flex>
+
                     { about.work.display && (
                         <>
                             <Heading
@@ -328,6 +367,29 @@ export default function About(
                                             onBackground="neutral-weak">
                                             {institution.description}
                                         </Text>
+                                        {institution.certificate.length > 0 && (
+                                            <Flex
+                                                fillWidth paddingTop="m" gap="12"
+                                                wrap>
+                                                {institution.certificate.map((certificate, index) => (
+                                                    <Flex
+                                                        key={index}
+                                                        border="neutral-medium"
+                                                        borderStyle="solid-1"
+                                                        radius="m"
+                                                        minWidth={certificate.width} height={certificate.height}>
+                                                        <SmartImage
+                                                            radius="m"
+                                                            enlarge
+                                                            pdfWidth={certificate.width.toString()}
+                                                            pdfHeight={certificate.height.toString()}
+                                                            alt={certificate.alt}
+                                                            src={certificate.pdfPreviewSrc}
+                                                            link={certificate.link}/>
+                                                    </Flex>
+                                                ))}
+                                            </Flex>
+                                        )}
                                     </Flex>
                                 ))}
                             </Flex>

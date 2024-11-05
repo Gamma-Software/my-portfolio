@@ -65,12 +65,24 @@ const createI18nContent = (t) => {
         },
         calendar: {
             display: true,
+            title: t("about.calendar.title"),
+            description: t("about.calendar.description"),
             link: 'https://cal.com/valentin-rudloff-htb2it/15min'
         },
         intro: {
             display: true,
             title: t("about.intro.title"),
             description: <>{t("about.intro.description")}</>
+        },
+        personal: {
+            display: true,
+            title: t("about.personal.title"),
+            description: <>{t("about.personal.description")}</>,
+            cta: {
+                display: true,
+                title: t("about.personal.cta.title"),
+                link: t("about.personal.cta.link")
+            }
         },
         work: {
             display: true, // set to false to hide this section
@@ -100,13 +112,60 @@ const createI18nContent = (t) => {
                     ]
                 },
                 {
-                    company: 'Navya',
-                    image: t("about.work.experiences.Navya.image"),
-                    timeframe: t("about.work.experiences.Navya.timeframe"),
-                    role: t("about.work.experiences.Navya.role"),
-                    achievements: t("about.work.experiences.Navya.achievements").split(";"),
-                    images: [ ]
-                }
+                    company: 'Navya (Release Manager)',
+                    image: t("about.work.experiences.Navya_rm.image"),
+                    timeframe: t("about.work.experiences.Navya_rm.timeframe"),
+                    role: t("about.work.experiences.Navya_rm.role"),
+                    achievements: t("about.work.experiences.Navya_rm.achievements").split(";"),
+                    images: [
+                        {
+                            link: 'https://www.navya.tech/fr/technologie/logiciel/',
+                            src: '/images/projects/releasemanager/simu.webp',
+                            alt: 'Navya Drive Release Manager',
+                            width: 16,
+                            height: 9
+                        },
+                    ]
+                },
+                {
+                    company: 'Navya (Chef de projet)',
+                    image: t("about.work.experiences.Navya_tract.image"),
+                    timeframe: t("about.work.experiences.Navya_tract.timeframe"),
+                    role: t("about.work.experiences.Navya_tract.role"),
+                    achievements: t("about.work.experiences.Navya_tract.achievements").split(";"),
+                    images: [
+                        {
+                            link: 'https://www.youtube.com/watch?v=CUeXF4VLI6M',
+                            src: '/images/projects/tract/prez.webp',
+                            alt: 'Navya Charlatte',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            link: 'https://www.facebook.com/NavyaGroup/videos/reportage-france-3-tracteur-charlatte-autonom-a%C3%A9roport-toulouse/802522323552040/?locale=fr_FR',
+                            src: '/images/projects/tract/aeroport.jpg',
+                            alt: 'Reportage Autonome Tract',
+                            width: 16,
+                            height: 9
+                        }
+                    ]
+                },
+                {
+                    company: 'Navya (Développeur)',
+                    image: t("about.work.experiences.Navya_dev.image"),
+                    timeframe: t("about.work.experiences.Navya_dev.timeframe"),
+                    role: t("about.work.experiences.Navya_dev.role"),
+                    achievements: t("about.work.experiences.Navya_dev.achievements").split(";"),
+                    images: [
+                        {
+                            link: 'https://www.youtube.com/watch?v=KrYNY9uEmbo',
+                            src: '/images/projects/releasemanager/prez.webp',
+                            alt: 'Navya Drive Driving',
+                            width: 16,
+                            height: 9
+                        }
+                    ]
+                },
             ]
         },
         studies: {
@@ -114,12 +173,60 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
+                    name: 'Ecole d\'ingénieurs ESTACA',
+                    description: <>{t(`about.studies.institutions.ESTACA.description`)}</>,
+                    certificate: [
+                        {
+                            src: '/images/certificates/estaca.pdf',
+                            alt: 'Estaca Certificate',
+                            pdfPreviewSrc: '/images/certificates/prev-estaca.png',
+                            width: 16,
+                            height: 9
+                        }
+                    ]
                 },
                 {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                    name: 'ISTQB',
+                    description: <>{t("about.studies.institutions.ISTQB.description")}</>,
+                    certificate: [
+                        {
+                            src: '/images/certificates/istqb.pdf',
+                            alt: 'ISTQB Certificate',
+                            pdfPreviewSrc: '/images/certificates/prev-istqb.png',
+                            width: 16,
+                            height: 9
+                        },
+                    ]
+                },
+                {
+                    name: 'Meta',
+                    description: <>{t("about.studies.institutions.Meta.description")}</>,
+                    certificate: [
+                        {
+                            link: 'https://www.coursera.org/account/accomplishments/verify/Q56LCBCGJ7J9',
+                            src: '/images/certificates/api.pdf',
+                            alt: 'Meta Certificate API',
+                            pdfPreviewSrc: '/images/certificates/prev-api.png',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            link: 'https://www.coursera.org/account/accomplishments/certificate/QYITBT7MJPSM',
+                            src: '/images/certificates/advanced-react.pdf',
+                            alt: 'Meta Certificate Advanced React',
+                            pdfPreviewSrc: '/images/certificates/prev-advanced-react.png',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            link: 'https://www.coursera.org/account/accomplishments/certificate/ZFWLL2ICATCE',
+                            src: '/images/certificates/django.pdf',
+                            alt: 'Meta Certificate Python Django',
+                            pdfPreviewSrc: '/images/certificates/prev-django.png',
+                            width: 16,
+                            height: 9
+                        }
+                    ]
                 }
             ]
         },
