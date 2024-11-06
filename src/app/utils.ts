@@ -33,6 +33,12 @@ function readMDXFile(filePath: string) {
 
     const rawContent = fs.readFileSync(filePath, 'utf-8');
     const { data, content } = matter(rawContent);
+    // Get the structure of the file list the headings
+    const structure = content.match(/^## (.*)$/gm)?.map(heading => ({
+        title: heading.replace(/^## /, ''),
+        display: true,
+        items: []
+    })) || [];
 
     const metadata: Metadata = {
         title: data.title || '',
@@ -42,19 +48,20 @@ function readMDXFile(filePath: string) {
         team: data.team || [],
     };
 
-    return { metadata, content };
+    return { metadata, content, structure };
 }
 
 function getMDXData(dir: string) {
     const mdxFiles = getMDXFiles(dir);
     return mdxFiles.map((file) => {
-        const { metadata, content } = readMDXFile(path.join(dir, file));
+        const { metadata, content, structure } = readMDXFile(path.join(dir, file));
         const slug = path.basename(file, path.extname(file));
 
         return {
             metadata,
             slug,
             content,
+            structure,
         };
     });
 }

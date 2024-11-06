@@ -103,9 +103,9 @@ function createHeading(level: 1 | 2 | 3 | 4 | 5 | 6) {
             </HeadingLink>
         );
     };
-  
+
     CustomHeading.displayName = `Heading${level}`;
-  
+
     return CustomHeading;
 }
 

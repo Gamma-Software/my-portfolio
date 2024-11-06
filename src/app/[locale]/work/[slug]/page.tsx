@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import { CustomMDX } from '@/components/mdx'
+import TableOfContents from '@/components/about/TableOfContents';
 import { formatDate, getPosts } from '@/app/utils'
 import { AvatarGroup, Button, Flex, Heading, SmartImage, Text } from '@/once-ui/components'
 import { baseURL, renderContent } from '@/app/resources';
@@ -16,7 +17,7 @@ interface WorkParams {
 
 export async function generateStaticParams() {
 	const locales = routing.locales;
-    
+
     // Create an array to store all posts from all locales
     const allPosts = [];
 
@@ -34,7 +35,7 @@ export async function generateStaticParams() {
 
 export function generateMetadata({ params: { slug, locale } }: WorkParams) {
 	let post = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]).find((post) => post.slug === slug)
-	
+
 	if (!post) {
 		return
 	}
@@ -86,7 +87,7 @@ export default function Project({ params }: WorkParams) {
 	}
 
 	const t = useTranslations();
-	const { person } = renderContent(t);
+	const { person, about } = renderContent(t);
 
 	const avatars = post.metadata.team?.map((person) => ({
         src: person.avatar,
@@ -161,6 +162,15 @@ export default function Project({ params }: WorkParams) {
 					</Text>
 				</Flex>
 				<CustomMDX source={post.content} />
+				{/* <Flex
+                    style={{ left: '0', top: '50%', transform: 'translateY(-50%)' }}
+                    position="fixed"
+                    paddingLeft="24" gap="32"
+                    direction="column" hide="s">
+                    <TableOfContents
+                        structure={post.structure}
+                        about={about} />
+                </Flex> */}
 			</Flex>
 		</Flex>
 	)
