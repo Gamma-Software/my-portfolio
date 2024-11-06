@@ -64,7 +64,9 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        title: 'Schedule a meeting',
+        description: 'Schedule a meeting with Valentin',
+        link: 'https://cal.com/valentin-rudloff-htb2it/15min'
     },
     intro: {
         display: true,
