@@ -381,11 +381,9 @@ export default function About(
                                                         <SmartImage
                                                             radius="m"
                                                             enlarge
-                                                            pdfWidth={certificate.width.toString()}
-                                                            pdfHeight={certificate.height.toString()}
                                                             alt={certificate.alt}
                                                             src={certificate.pdfPreviewSrc}
-                                                            link={certificate.link}/>
+                                                            link={certificate.link ? certificate.link : undefined}/>
                                                     </Flex>
                                                 ))}
                                             </Flex>
