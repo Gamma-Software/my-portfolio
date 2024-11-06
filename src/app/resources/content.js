@@ -124,10 +124,12 @@ const about = {
             {
                 name: 'University of Jakarta',
                 description: <>Studied software engineering.</>,
+                certificate: []
             },
             {
                 name: 'Build the Future',
                 description: <>Studied online marketing and personal branding.</>,
+                certificate: []
             }
         ]
     },
