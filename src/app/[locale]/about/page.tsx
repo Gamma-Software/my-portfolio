@@ -383,7 +383,7 @@ export default function About(
                                                             enlarge
                                                             alt={certificate.alt}
                                                             src={certificate.pdfPreviewSrc}
-                                                            link={certificate.link ? certificate.link : undefined}/>
+                                                            link={certificate.link}/>
                                                     </Flex>
                                                 ))}
                                             </Flex>

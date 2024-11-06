@@ -181,7 +181,8 @@ const createI18nContent = (t) => {
                             alt: 'Estaca Certificate',
                             pdfPreviewSrc: '/images/certificates/prev-estaca.png',
                             width: 16,
-                            height: 9
+                            height: 9,
+                            link: undefined
                         }
                     ]
                 },
@@ -194,7 +195,8 @@ const createI18nContent = (t) => {
                             alt: 'ISTQB Certificate',
                             pdfPreviewSrc: '/images/certificates/prev-istqb.png',
                             width: 16,
-                            height: 9
+                            height: 9,
+                            link: undefined
                         },
                     ]
                 },
