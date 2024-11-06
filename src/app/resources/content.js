@@ -71,6 +71,16 @@ const about = {
         title: 'Introduction',
         description: <>Valentin is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
     },
+    personal: {
+        display: true,
+        title: 'Personal',
+        description: <>Valentin is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>,
+        cta: {
+            display: true,
+            title: t("about.personal.cta.title"),
+            link: t("about.personal.cta.link")
+        }
+    },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
