@@ -1,0 +1,13 @@
+---
+title: "AIOP - All In One Packager"
+publishedAt: "2024-11-06"
+summary: "AIOP est un outil de packaging pour des applications modulaires."
+images:
+  - "/images/projects/aiop/tuto_en.png"
+  - "/images/projects/aiop/simple.gif"
+team:
+  - name: "Valentin Rudloff"
+    role: "Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/rudloffvalentin/"
+---
