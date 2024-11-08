@@ -3,7 +3,8 @@ title: "LLM Qualitative Analysis"
 publishedAt: "2024-11-8"
 summary: "LLM Qualitative Analysis est un outil pour faire de l'analyse de données qualitatives."
 images:
-  - "/images/projects/llm-qualitative-analysis/prez.png"
+  - "/images/projects/aiop/tuto_en.png"
+  - "/images/projects/aiop/simple.gif"
 team:
   - name: "Valentin Rudloff"
     role: "Engineer"
@@ -12,6 +13,8 @@ team:
 ---
 
 [Github repo](https://github.com/Gamma-Software/llm_qualitative_data_analysis)
+
+[Demo presentation](https://www.loom.com/share/1666c256531e409791241b43c3abbefc?sid=308a92a7-b052-42c7-b711-a8bdfc27ace9)
 
 [Demo](https://qualitative-data-analysis-llm.streamlit.app/)
 
