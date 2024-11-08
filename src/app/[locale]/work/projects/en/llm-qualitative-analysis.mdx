@@ -1,0 +1,77 @@
+---
+title: "LLM Qualitative Analysis"
+publishedAt: "2024-11-8"
+summary: "LLM Qualitative Analysis is a tool for qualitative data analysis."
+images:
+  - "/images/projects/aiop/tuto_en.png"
+  - "/images/projects/aiop/simple.gif"
+team:
+  - name: "Valentin Rudloff"
+    role: "Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/rudloffvalentin/"
+---
+
+[Github repo](https://github.com/Gamma-Software/llm_qualitative_data_analysis)
+
+[Demo](https://qualitative-data-analysis-llm.streamlit.app/)
+
+## Overview
+
+This is a tool to help you perform your qualitative data analysis.
+🧐 For example, it can take your transcriptions and generate codes and themes for you 💡.
+It summarizes your data and can help you gain insights from your data. 📊
+
+### Background
+
+For my wife's thesis, she needed a tool to help her perform qualitative data analysis on the transcriptions she had made.
+📚 LLMs are really good at understanding human semantics and thus performing qualitative data analysis.
+🧠 This application helped her achieve an almost instant result, and I'm sure it can help you too. 👍
+
+The application and the LLM prompt are greatly inspired by the video by [Dr Philip Adu, Ph.D](https://www.drphilipadu.com/)
+titled [Master Qualitative Data Analysis with ChatGPT: An 18-Minute Guide](https://www.youtube.com/watch?v=L1WelrcgLGM).
+
+## Main Features
+
+- Upload your transcriptions 📂
+- Generate a summary on all data or specific data 📊
+- Based on a research question, generate a data summary, generate codes and themes. ❓
+- Update qualitative data analysis parameters 🔄
+- Generate a qualitative data analysis report and download it 📄
+
+### Limitations
+
+Currently, the tool cannot perform qualitative data analysis on large datasets because the LLM used is limited to 16000 tokens. 🚫
+Data is not cached, nor is the report. So, if you refresh the page, the data will need to be uploaded again and the report regenerated. 🔄
+
+### Improvements
+
+- Upload voice transcriptions, convert them to text, and perform qualitative data analysis 🗣️
+- Connect to qualitative data analysis software 🤝
+- (double-check) Perform intermediate checks on results to avoid LLM biases 🤔
+- Perform a map-refine summary on the data
+- Handle large data transcriptions
+
+## Technologies Used
+
+Qualitative data analysis uses LLMs or Large Language Models to generate summaries/codes/themes and classify them.
+ 🤖 The application is developed with Python.
+
+### Python Library
+
+This tool is powered by libraries:
+
+- Streamlit: For the user interface 🖥️
+- Langchain: For creating LLM applications 🔗
+- OpenAI: The LLM provider. For now, we have only integrated this LLM.
+
+## Challenges and Learnings
+
+I discovered with this project that LLMs are really good at performing qualitative data analysis.
+They are capable of generating codes and themes based on a research question.
+It's a very simple tool to use and can be very useful for performing qualitative data analysis of transcriptions.
+I learned to use Streamlit and Langchain, and I discovered new ways to use LLMs.
+
+## Results
+
+The application is starred 37 times, has 75 unique users, and has had 1000+ views on posts.

@@ -13,11 +13,11 @@
         "title": "Portfolio de {name}",
         "description": "Site portfolio présentant mon travail en tant que {role}",
         "headline": "Ingénieur concepteur, entrepreneur, et développeur",
-        "subline": "Je suis Valentin, Responsable technique chez Worldline, où je suis responsable d'une équipe de 6 personnes en charge du développement de solutions embarqués dans des terminaux de paiement. Après le travail, je développe mes propres projets."
+        "subline": "Je suis Valentin, Responsable technique chez Worldline en charge du développement de solutions embarqués dans des terminaux de paiement. Après le travail, je développe mes propres projets."
     },
     "about": {
         "label": "À propos",
-        "title": "À propos de moi",
+        "title": "À propos de moi (CV)",
         "calendar": {
             "title": "Prendre rendez-vous",
             "description": "Contactez-moi pour un rendez-vous"
