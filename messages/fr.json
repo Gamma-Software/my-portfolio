@@ -1,6 +1,6 @@
 {
     "person": {
-        "role": "Ingénieur, entrepreneur, et développeur",
+        "role": "Ingénieur pluridisciplinaire",
         "certificate": "Ingénieur des transports spécialité Systèmes embarqués; Certifié ISTQB; Full Stack Developer Meta"
     },
     "newsletter": {
@@ -12,7 +12,7 @@
         "label": "Accueil",
         "title": "Portfolio de {name}",
         "description": "Site portfolio présentant mon travail en tant que {role}",
-        "headline": "Ingénieur concepteur, entrepreneur, et développeur",
+        "headline": "Ingénieur pluridisciplinaire",
         "subline": "Je suis Valentin, Responsable technique chez Worldline en charge du développement de solutions embarqués dans des terminaux de paiement. Après le travail, je développe mes propres projets."
     },
     "about": {

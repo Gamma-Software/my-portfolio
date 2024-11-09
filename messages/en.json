@@ -1,6 +1,6 @@
 {
     "person": {
-        "role": "Engineer, Entrepreneur, and Developer",
+        "role": "Pluridisciplinary Engineer",
         "certificate": "Transportation Engineer specializing in Embedded Systems; ISTQB Certified; Meta Full Stack Developer"
     },
     "newsletter": {
@@ -12,7 +12,7 @@
         "label": "Home",
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Engineer, Entrepreneur, and Developer",
+        "headline": "Pluridisciplinary Engineer",
         "subline": "I'm Valentin, Technical Lead at Worldline, where I manage a team of 6 responsible for developing embedded solutions in payment terminals. After work, I develop my own projects."
     },
     "about": {
