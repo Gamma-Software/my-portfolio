@@ -1,0 +1,103 @@
+---
+title: "Terms AI"
+publishedAt: "2024-11-08"
+summary: "Terms AI est un outil pour analyser les termes d'un contrat avec des Intélligences Artificielles (LLM)."
+images:
+  - "/images/projects/terms-ai/terms-ai-prez.png"
+team:
+  - name: "Valentin Rudloff"
+    role: "Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/rudloffvalentin/"
+---
+
+[Github repo](https://github.com/Gamma-Software/TermsAI)
+
+[Demo vidéo](https://www.loom.com/share/1666c256531e409791241b43c3abbefc?sid=308a92a7-b052-42c7-b711-a8bdfc27ace9)
+
+[Essayer l'application](https://termsai.streamlit.app/)
+
+## Aperçus
+
+Ceci est un outil pour vous aider à analyser et extraire des termes d'un contrat.
+🧐 Il prend un ou plusieurs contrat; vous posez des questions et il vous génère un tableau avec la réponse de chaque question sur chaque contrat 💡.
+Vous pouvez également générer un résumé de chaque contrat.
+
+## Historique
+
+L'idée m'est venue lorsque je me suis mis à lire des termes d'utilisation de logiciels.
+J'ai trouvé cela très fastidieux. Personne ne veut lire tous les termes d'utilisation de Facebook par exemple.
+Alors je me suis dis que cela pourrait être intéressant d'avoir un outil qui extrait des informations de ces contrats.
+Et de remonter les informations importantes que la personne pourrait avoir besoin.
+Et ensuite je me suis dit qu'on pourrait le faire sur des contrats d'assurance, de crédit, de loyer etc.
+
+## Exemples d'applications
+
+Je pense que cet outil est très utile pour aider les personnes qui ont besoin d'extraire des données de fichiers similaires. On peut par exemple penser:
+
+- Aux avocats qui ont besoin de faire de la veille juridique
+- Aux RH qui ont besoin de générer un tableau de synthèse des compétences des candidats
+- Aux entreprises qui ont besoin de générer un tableau de synthèse des coûts des prestations
+- Aux utilisateurs qui souhaitent récupérer des informations d'un terme d'utilisation d'un logiciel
+
+## Fonctionnalitées principales
+
+- Lire un contrat même si c'est un fichier image car l'outil va générer un PDF en faisant de l'[OCR](https://fr.wikipedia.org/wiki/Reconnaissance_optique_de_caract%C3%A8res) 📄
+- Générer un résumé de chaque contrat 📄
+- Poser des questions sur chaque contrat 💬
+- Générer un tableau avec la réponse de chaque question sur chaque contrat 📊
+- Mise à jour des métadonnées du contrat avec le rapport
+
+### Limitations
+
+Pour des raisons de démonstration, l'application limite à 3 PDF et 5 questions maximum.
+Les PDF ne peuvent pas dépasser 4 pages.
+
+### Comment ça fonctionne ?
+
+Les fonctionnalités sont entièrement personnalisables. Vous pouvez choisir d'en activer une ou plusieurs.
+
+- Téléchargez un contrat (ou plusieurs)
+  - Format PDF (texte ou scanné)
+- Sélectionnez les fonctionnalités à activer
+  - Réponse aux questions : Posez toutes les questions que vous avez sur le contrat
+  - Résumé : Obtenez un résumé du contrat
+  - Inclure les métadonnées : Incluez les résultats dans les métadonnées du contrat
+  - Générer un rapport : Générez un rapport des résultats
+- Posez toutes les questions que vous avez sur le contrat
+  - Vous pouvez poser une question
+  - Vous pouvez poser plusieurs questions
+  - Vous pouvez poser des questions dans différentes langues
+  - Ou vous pouvez passer cette étape
+- Attendez que l'application
+  - Traite le contrat
+  - Réponde à vos questions
+  - Et vous fournisse un résumé du contrat
+- Vous pouvez maintenant télécharger le contrat avec les métadonnées incluses des questions et réponses, ainsi que le résumé et le rapport
+
+## Technologies Utilisées
+
+L'analyse de données qualitatives utilise des LLMs ou Large Language Models pour générer des résumés et extraire les informations pertinentes.
+ 🤖 L'application est développée avec Python.
+
+### Librairie python
+
+Cet outil est alimenté par des bibliothèques :
+
+- Streamlit : Pour l'interface utilisateur 🖥️
+- Langchain : Pour créer des applications LLM 🔗
+- OpenAI : Le fournisseur de LLM. Pour l'instant, nous n'avons intégré que ce LLM.
+
+## Challenges et apprentissages
+
+C'était la première foit que j'intégrait une solution OCR pour lire des fichiers images et ensuite générer un PDF.
+C'était également la première fois que je manipulait des fichiers PDF.
+Et c'était la première fois que je développait une chaine d'agents LLM. Il y a 3 agents qui travaillent en parallèle.
+Pouvoir les faire travailler ensemble et fine-tuner le prompt était un challenge.
+
+## Résultats
+
+L'application est maintenant capable de lire des fichiers images, de générer un PDF,
+de faire de l'OCR, de générer un résumé, de répondre à des questions et de générer un rapport.
+
+Vous pouvez tester l'application [ici](https://termsai.streamlit.app/)

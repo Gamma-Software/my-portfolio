@@ -1,0 +1,103 @@
+---
+title: "Terms AI"
+publishedAt: "2024-11-08"
+summary: "Terms AI est un outil pour analyser les termes d'un contrat avec des Intélligences Artificielles (LLM)."
+images:
+  - "/images/projects/terms-ai/terms-ai-prez.png"
+team:
+  - name: "Valentin Rudloff"
+    role: "Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/rudloffvalentin/"
+---
+
+[Github repo](https://github.com/Gamma-Software/TermsAI)
+
+[Demo vidéo](https://www.loom.com/share/1666c256531e409791241b43c3abbefc?sid=308a92a7-b052-42c7-b711-a8bdfc27ace9)
+
+[Essayer l'application](https://termsai.streamlit.app/)
+
+## Overview
+
+This is a tool to help you analyze and extract terms from a contract.
+🧐 It processes one or more contracts; you ask questions, and it generates a table with the answer to each question for each contract 💡.
+You can also generate a summary of each contract.
+
+## Background
+
+The idea came to me when I started reading software terms of use.
+I found it very tedious. No one wants to read all the terms of use of Facebook, for example.
+So, I thought it might be interesting to have a tool that extracts information from these contracts.
+And highlights the important information that a person might need.
+Then I thought we could do it for insurance, credit, lease contracts, etc.
+
+## Examples of applications
+
+I think this tool is very useful for helping people who need to extract data from similar files. For example, we can think of:
+
+- Lawyers who need to conduct legal monitoring
+- HR professionals who need to generate a summary table of candidates' skills
+- Companies that need to generate a summary table of service costs
+- Users who want to retrieve information from a software's terms of use
+
+## Key Features
+
+- Read a contract even if it's an image file because the tool will generate a PDF using [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) 📄
+- Generate a summary of each contract 📄
+- Ask questions about each contract 💬
+- Generate a table with the answer to each question for each contract 📊
+- Update the contract's metadata with the report
+
+### Limitations
+
+For demonstration purposes, the application is limited to 3 PDFs and a maximum of 5 questions.
+PDFs cannot exceed 4 pages.
+
+### How it Works
+
+The features are fully customizable. You can choose to activate one or more.
+
+- Upload a contract (or multiple)
+  - PDF format (text or scanned)
+- Select the features to activate
+  - Question answering: Ask any questions you have about the contract
+  - Summary: Get a summary of the contract
+  - Include metadata: Include the results in the contract's metadata
+  - Generate a report: Generate a report of the results
+- Ask any questions you have about the contract
+  - You can ask one question
+  - You can ask multiple questions
+  - You can ask questions in different languages
+  - Or you can skip this step
+- Wait for the application to
+  - Process the contract
+  - Answer your questions
+  - Provide you with a summary of the contract
+- You can now download the contract with the included metadata of questions and answers, as well as the summary and report
+
+## Technologies Used
+
+Qualitative data analysis uses LLMs or Large Language Models to generate summaries and extract relevant information.
+ 🤖 The application is developed with Python.
+
+### Python Libraries
+
+This tool is powered by libraries:
+
+- Streamlit: For the user interface 🖥️
+- Langchain: To create LLM applications 🔗
+- OpenAI: The LLM provider. For now, we have only integrated this LLM.
+
+## Challenges and Learnings
+
+It was the first time I integrated an OCR solution to read image files and then generate a PDF.
+It was also the first time I handled PDF files.
+And it was the first time I developed a chain of LLM agents. There are 3 agents working in parallel.
+Getting them to work together and fine-tuning the prompt was a challenge.
+
+## Results
+
+The application is now capable of reading image files, generating a PDF,
+performing OCR, generating a summary, answering questions, and generating a report.
+
+You can test the application [here](https://termsai.streamlit.app/)
