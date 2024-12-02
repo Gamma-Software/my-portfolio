@@ -12,12 +12,15 @@ import { routing } from '@/i18n/routing';
 import { Locale, usePathname, useRouter } from '@/i18n/routing';
 import { renderContent } from "@/app/resources";
 import { useTranslations } from "next-intl";
-import { i18n } from "@/app/resources/config";
+import { i18n, style } from "@/app/resources/config";
+import { useTheme } from "next-themes";
 
 type TimeDisplayProps = {
     timeZone: string;
     locale?: string;  // Optionally allow locale, defaulting to 'en-GB'
 };
+
+export type Theme = (typeof style.theme)[number];
 
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
     const [currentTime, setCurrentTime] = useState('');
@@ -53,6 +56,7 @@ export default TimeDisplay;
 
 export const Header = () => {
     const router = useRouter();
+    const { setTheme } = useTheme()
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname() ?? '';
     const params = useParams();
@@ -65,6 +69,11 @@ export const Header = () => {
                 {locale: nextLocale}
             )
         })
+    }
+
+    function handleThemeChange(theme: 'light' | 'dark') {
+        const nextTheme = theme as Theme;
+        setTheme(nextTheme)
     }
 
     const t = useTranslations();
@@ -154,15 +163,33 @@ export const Header = () => {
                                     key={index}
                                     selected={params?.locale === locale}
                                     onClick={() => handleLanguageChange(locale)}
-                                    className={isPending && 'pointer-events-none opacity-60' || ''}
-                                    >
+                                    className={isPending ? 'pointer-events-none opacity-60' : ''}>
                                     {locale.toUpperCase()}
                                 </ToggleButton>
                             ))}
                         </Flex>
                     }
+                    <Flex
+                        background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
+                        padding="4" gap="2"
+                        justifyContent="center">
+                        <ToggleButton
+                            prefixIcon="sun"
+                            selected={params?.theme === 'light'}
+                            onClick={() => handleThemeChange('light')}
+                            className={isPending ? 'pointer-events-none opacity-60' : ''}>
+                            <Flex paddingX="2" hide="s">Light</Flex>
+                        </ToggleButton>
+                        <ToggleButton
+                            prefixIcon="moon"
+                            selected={params?.theme === 'dark'}
+                            onClick={() => handleThemeChange('dark')}
+                            className={isPending ? 'pointer-events-none opacity-60' : ''}>
+                            <Flex paddingX="2" hide="s">Dark</Flex>
+                        </ToggleButton>
+                    </Flex>
                     <Flex hide="s">
-                        { display.time && (
+                        {display.time && (
                             <TimeDisplay timeZone={person.location}/>
                         )}
                     </Flex>

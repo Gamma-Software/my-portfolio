@@ -41,22 +41,26 @@
                 "Worldline": {
                     "timeframe": "April 2022 - Present",
                     "role": "Technical Lead",
-                    "achievements": "Technical lead and primary point of contact for the In-Store Payment Gateway (Axis) team: Vending, Parking, EVCharging. __Axis is an international payment solution processing over 1 Billion Euros daily!__; Developed testing strategies and methodologies (based on ISTQB), __leading to a 50% increase in test coverage__; Automated test bench operations, __achieving 80% automated test coverage__; Standardized and systematized software validation and package generation. __Over 500 unique software packages generated monthly__; Team efficiency tracking and optimization __(70% efficiency improvement by streamlining workflows).__; Collaborated with multiple partners (LM Control, Hectronic, Symotronic, etc.) to integrate new payment methods __(successfully executed international projects).__"
+                    "achievements": "Technical lead and primary point of contact for the In-Store Payment Gateway (Axis) team: Vending, Parking, EVCharging. __Axis is an international payment solution processing over 1 Billion Euros daily!__; Developed testing strategies and methodologies (based on ISTQB), __leading to a 50% increase in test coverage__; Automated test bench operations, __achieving 80% automated test coverage__; Standardized and systematized software validation and package generation. __Over 500 unique software packages generated monthly__; Team efficiency tracking and optimization __(70% efficiency improvement by streamlining workflows).__; Collaborated with multiple partners (LM Control, Hectronic, Symotronic, etc.) to integrate new payment methods __(successfully executed international projects).__",
+                    "image": ""
                 },
                 "Navya_rm": {
                     "timeframe": "2020 - 2022",
                     "role": "Release Manager",
-                    "achievements": "Established the release management for NavyaDrive embedded software. __NavyaDrive is an autonomous driving solution for 5 different industrial vehicles, developed by 80 engineers__; Managed integration of software modules from 80 engineers (__handling 150 daily commits__); Implemented the CI/CD pipeline. __In 2 years, Navya vehicles covered over 2,000,000 kilometers in simulated environments__; Oversaw bug tracking and reporting to management. __Reduced bugs by 50% before beta between the first and latest versions__; Led validation strategy and testing. __Managed two teams (3 testers and 3 automation specialists)__"
+                    "achievements": "Established the release management for NavyaDrive embedded software. __NavyaDrive is an autonomous driving solution for 5 different industrial vehicles, developed by 80 engineers__; Managed integration of software modules from 80 engineers (__handling 150 daily commits__); Implemented the CI/CD pipeline. __In 2 years, Navya vehicles covered over 2,000,000 kilometers in simulated environments__; Oversaw bug tracking and reporting to management. __Reduced bugs by 50% before beta between the first and latest versions__; Led validation strategy and testing. __Managed two teams (3 testers and 3 automation specialists)__",
+                    "image": ""
                 },
                 "Navya_tract": {
                     "timeframe": "2019 - 2020",
                     "role": "Project Manager for Autonomous Tract",
-                    "achievements": "Technical lead and project manager for developing and integrating hardware, middleware, and software for an autonomous AGV platform by Charlatte. __Managed 6 specialized teams (15 developers, 1 automation specialist, 2 testers, 1 deployment manager)__; Oversaw the project end-to-end, from technical design to deployment; Organized project committee meetings."
+                    "achievements": "Technical lead and project manager for developing and integrating hardware, middleware, and software for an autonomous AGV platform by Charlatte. __Managed 6 specialized teams (15 developers, 1 automation specialist, 2 testers, 1 deployment manager)__; Oversaw the project end-to-end, from technical design to deployment; Organized project committee meetings.",
+                    "image": ""
                 },
                 "Navya_dev": {
                     "timeframe": "2017 - 2019",
                     "role": "Embedded Developer, Trajectory Control",
-                    "achievements": "Developed embedded software for trajectory control in industrial vehicles. __Real-time development using RTMaps__; Developed obstacle avoidance algorithms; Designed pedestrian path optimization algorithms. __Predicted obstacle trajectories__; Implemented best practices in software engineering __successfully delivering projects end-to-end__."
+                    "achievements": "Developed embedded software for trajectory control in industrial vehicles. __Real-time development using RTMaps__; Developed obstacle avoidance algorithms; Designed pedestrian path optimization algorithms. __Predicted obstacle trajectories__; Implemented best practices in software engineering __successfully delivering projects end-to-end__.",
+                    "image": ""
                 }
             }
         },
