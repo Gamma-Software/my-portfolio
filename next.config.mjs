@@ -11,6 +11,14 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'note-buddy.app',
+            },
+        ],
+    },
 };
 
 export default withNextIntl(withMDX(nextConfig));
