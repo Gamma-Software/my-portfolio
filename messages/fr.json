@@ -63,7 +63,7 @@
         "studies": {
             "title": "Études",
             "institutions": {
-                "ESTACA": {
+              "ESTACA": {
                     "description": "Étudié l'ingénierie mécanique (aérospatial, aéronautique, automobile, ferroviaire) et les systèmes embarqués."
                 },
                 "ISTQB": {
