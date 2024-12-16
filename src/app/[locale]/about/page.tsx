@@ -313,7 +313,7 @@ export default function About(
                                                 </Text>
                                             ))}
                                         </Flex>
-                                        {experience.images.length > 0 && (
+                                        {experience.images && experience.images.length > 0 && (
                                             <Flex
                                                 fillWidth paddingTop="m" gap="12"
                                                 wrap>
