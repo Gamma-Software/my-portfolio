@@ -3,7 +3,7 @@ import React from 'react';
 import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 
-import { baseURL, routes, renderContent } from '@/app/resources'; 
+import { baseURL, routes, renderContent } from '@/app/resources';
 import { Mailchimp } from '@/components';
 import { Posts } from '@/components/blog/Posts';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
@@ -96,28 +96,43 @@ export default function Home(
 								{home.subline}
 							</Text>
 						</RevealFx>
-						<RevealFx translateY="12" delay={0.4}>
-							<Button
-								data-border="rounded"
+						<Flex direction="horizontal" gap="m">
+							<RevealFx translateY="12" delay={0.4}>
+								<Button
+									data-border="rounded"
 								href={`/${locale}/about`}
 								variant="tertiary"
 								suffixIcon="chevronRight"
 								size="m">
-								<Flex
-									gap="8"
-									alignItems="center">
-									{about.avatar.display && (
-										<Avatar
-											style={{marginLeft: '-0.75rem', marginRight: '0.25rem'}}
-											src={person.avatar}
-											size="m"/>
-										)}
-										{t("about.title")}
-								</Flex>
-							</Button>
-						</RevealFx>
+									<Flex
+										gap="8"
+										alignItems="center">
+										{about.avatar.display && (
+											<Avatar
+												style={{marginLeft: '-0.75rem', marginRight: '0.25rem'}}
+												src={person.avatar}
+												size="m"/>
+											)}
+											{t("about.title")}
+									</Flex>
+								</Button>
+							</RevealFx>
+							<RevealFx translateY="12" delay={0.4}>
+								<Button
+									data-border="rounded"
+								href={`/${locale}/blog/cofounder`}
+								variant="tertiary"
+								suffixIcon="chevronRight"
+								size="m">
+									<Flex
+										gap="8"
+										alignItems="center">
+										{t("about.title2")}
+									</Flex>
+								</Button>
+							</RevealFx>
+						</Flex>
 					</Flex>
-				
 			</Flex>
 			<RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1,1]} locale={locale}/>
