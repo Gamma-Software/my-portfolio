@@ -96,7 +96,7 @@ export default function Home(
 								{home.subline}
 							</Text>
 						</RevealFx>
-						<Flex direction="horizontal" gap="m">
+						<Flex direction="row" gap="m">
 							<RevealFx translateY="12" delay={0.4}>
 								<Button
 									data-border="rounded"
