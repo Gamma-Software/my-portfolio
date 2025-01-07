@@ -1,0 +1,91 @@
+---
+title: "zsh-copilot"
+publishedAt: "2025-01-07"
+summary: "A lightweight Zsh plugin that predict your next command using llm. You can also ask to create a command or fix your current command."
+images:
+  - "/images/projects/zsh-copilot/zsh-copilot.png"
+team:
+  - name: "Valentin Rudloff"
+    role: "Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/rudloffvalentin/"
+---
+
+## Overview
+
+A lightweight Zsh plugin that predict your next command using llm. You can also ask to create a command.
+The project is available on [https://github.com/Gamma-Software/zsh-copilot](https://github.com/Gamma-Software/zsh-copilot).
+
+## For who ?
+
+zsh-copilot is for everyone who use zsh shell.
+
+## What it solves
+
+Using the command line can be challenging, especially when:
+
+- You need to remember **complex command syntax** and options
+- You want to **automate repetitive tasks** but don't know the right commands
+- You encounter **errors** and need help fixing them
+- You want to **be more productive** but spend time looking up commands
+
+zsh-copilot helps solve these problems by:
+
+- **Predicting** your next command based on your history and patterns
+- **Generating** commands from natural language descriptions
+- **Fixing** command errors automatically
+- **Streamlining** your command-line workflow with AI assistance
+
+## How it works
+
+It uses ChatGPT to generate, fix or predict your shell commands.
+
+## Features
+
+### Generate command
+
+zsh-copilot can generate command based on your history and patterns. For instance you run the following command:
+
+```zsh
+zca search for the file "test.txt" in the current directory
+```
+
+The `zca` command is alias of `zsh-copilot ask`.
+
+You can also write the command then call a shortcut you set in the environment variable via `zsh-copilot config`. By default it's `ctrl+k then ctrl+a`.
+
+### Fix command
+
+zsh-copilot can fix your command error. After getting an error in your shell terminal, you can ask to fix it.
+
+```zsh
+ls )l
+zsh: parse error near `)'
+```
+
+To fix it, you can ask to fix it.
+
+```zsh
+zca fix
+```
+
+You can also call a shortcut you set in the environment variable via `zsh-copilot config`. By default it's `ctrl+k then ctrl+f`.
+
+### Predict command
+
+zsh-copilot can predict your next command. Call the shortcut you set in the environment variable via `zsh-copilot config`. By default it's `ctrl+k then ctrl+p`.
+
+## Technologies
+
+- **Zsh**: The shell used by zsh-copilot.
+- **ChatGPT**: The llm used by zsh-copilot.
+
+## Challenges and learnings
+
+It's the first time I create a zsh plugin. I learn a lot about zsh and zsh plugin development.
+
+## Results
+
+Not knowing every command syntax and options is a common problem. zsh-copilot helps you to be more productive by predicting your next command, fixing your command error and generating command.
+It's a great tool to help you to be more productive.
+The project is available on [https://github.com/Gamma-Software/zsh-copilot](https://github.com/Gamma-Software/zsh-copilot).

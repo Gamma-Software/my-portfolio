@@ -1,0 +1,91 @@
+---
+title: "zsh-copilot"
+publishedAt: "2025-01-07"
+summary: "Un plugin Zsh léger qui prédit votre prochaine commande en utilisant l'IA. Vous pouvez également demander de créer une commande ou corriger votre commande actuelle."
+images:
+  - "/images/projects/zsh-copilot/zsh-copilot.png"
+team:
+  - name: "Valentin Rudloff"
+    role: "Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/rudloffvalentin/"
+---
+
+## Aperçu
+
+Un plugin Zsh léger qui prédit votre prochaine commande en utilisant l'IA. Vous pouvez également demander de créer une commande.
+Le projet est disponible sur [https://github.com/Gamma-Software/zsh-copilot](https://github.com/Gamma-Software/zsh-copilot).
+
+## Pour qui ?
+
+zsh-copilot est destiné à tous ceux qui utilisent le shell zsh.
+
+## Le problème qu'il résout
+
+L'utilisation de la ligne de commande peut être difficile, particulièrement quand :
+
+- Vous devez vous souvenir de la **syntaxe complexe des commandes** et des options
+- Vous voulez **automatiser des tâches répétitives** mais ne connaissez pas les bonnes commandes
+- Vous rencontrez des **erreurs** et avez besoin d'aide pour les corriger
+- Vous voulez **être plus productif** mais passez du temps à chercher les commandes
+
+zsh-copilot aide à résoudre ces problèmes en :
+
+- **Prédisant** votre prochaine commande basée sur votre historique et vos habitudes
+- **Générant** des commandes à partir de descriptions en langage naturel
+- **Corrigeant** automatiquement les erreurs de commande
+- **Optimisant** votre flux de travail en ligne de commande avec l'assistance de l'IA
+
+## Comment ça fonctionne
+
+Il utilise ChatGPT pour générer, corriger ou prédire vos commandes shell.
+
+## Fonctionnalités
+
+### Génération de commandes
+
+zsh-copilot peut générer des commandes basées sur votre historique et vos habitudes. Par exemple, vous pouvez exécuter la commande suivante :
+
+```zsh
+zca recherche le fichier "test.txt" dans le répertoire courant
+```
+
+La commande `zca` est un alias de `zsh-copilot ask`.
+
+Vous pouvez également écrire la commande puis utiliser un raccourci que vous définissez dans la variable d'environnement via `zsh-copilot config`. Par défaut, c'est `ctrl+k puis ctrl+a`.
+
+### Correction de commandes
+
+zsh-copilot peut corriger les erreurs de vos commandes. Après avoir obtenu une erreur dans votre terminal shell, vous pouvez demander de la corriger.
+
+```zsh
+ls )l
+zsh: parse error near `)'
+```
+
+Pour la corriger, vous pouvez demander une correction.
+
+```zsh
+zca fix
+```
+
+Vous pouvez également utiliser un raccourci que vous définissez dans la variable d'environnement via `zsh-copilot config`. Par défaut, c'est `ctrl+k puis ctrl+f`.
+
+### Prédiction de commandes
+
+zsh-copilot peut prédire votre prochaine commande. Utilisez le raccourci que vous définissez dans la variable d'environnement via `zsh-copilot config`. Par défaut, c'est `ctrl+k puis ctrl+p`.
+
+## Technologies
+
+- **Zsh** : Le shell utilisé par zsh-copilot.
+- **ChatGPT** : Le LLM utilisé par zsh-copilot.
+
+## Défis et apprentissages
+
+C'est la première fois que je crée un plugin zsh. J'ai beaucoup appris sur zsh et le développement de plugins zsh.
+
+## Résultats
+
+Ne pas connaître toutes les syntaxes et options des commandes est un problème courant. zsh-copilot vous aide à être plus productif en prédisant votre prochaine commande, en corrigeant vos erreurs de commande et en générant des commandes.
+C'est un excellent outil pour vous aider à être plus productif.
+Le projet est disponible sur [https://github.com/Gamma-Software/zsh-copilot](https://github.com/Gamma-Software/zsh-copilot).
