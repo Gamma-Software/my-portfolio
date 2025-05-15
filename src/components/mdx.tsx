@@ -61,7 +61,7 @@ function CustomLink({ href, children, ...props }: CustomLinkProps) {
     );
 }
 
-function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) {
+function createImage({ alt, src, width, height, ...props }: SmartImageProps & { src: string }) {
     if (!src) {
         console.error("SmartImage requires a valid 'src' property.");
         return null;
@@ -72,9 +72,11 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
             className="my-20"
             enlarge
             radius="m"
-            aspectRatio="16 / 9"
+            aspectRatio={width || height ? undefined : "16 / 9"}
             alt={alt}
             src={src}
+            width={width}
+            height={height}
             {...props}/>
         )
 }
