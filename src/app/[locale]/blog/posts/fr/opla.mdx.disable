@@ -1,0 +1,24 @@
+---
+title: "🚀 Opla, une application de mise en relation entre automobilistes"
+publishedAt: "2025-04-26"
+summary: "Opla est une application qui à pour objectif d'eradiquer le besoin de trouver un place une bonne fois pour toute."
+---
+
+## 🎯 Objectif
+
+yo
+
+<Widget
+    id="01JST01W8BPSJBZ1F7E1RYM7YW"
+    style={{
+        width: '100%',
+        height: '500px',
+        margin: '20px auto',
+    }}
+    medium="demo-test"
+    hidden={{ foo: 'foo value', bar: 'bar value' }}
+    transitiveSearchParams={['foo', 'bar']}
+    iframeProps={{ title: 'Foo Bar' }}
+/>
+
+Test
